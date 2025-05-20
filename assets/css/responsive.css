@@ -2,6 +2,7 @@
 /* media query max width 850px */
 /* =================================================================================================================== */
 @media (max-width: 850px) {
+  /* header section code  ===========================================================================================================*/
   .navbar {
     display: none;
   }
@@ -18,7 +19,7 @@
     position: absolute;
     top: 120px;
     right: 0;
-    height: 100vh;
+    height: calc(100vh - 150px);
     background: linear-gradient(to bottom, #000000 0%, #011c2a 100%);
     border-radius: 20px;
     width: 300px;
@@ -44,5 +45,42 @@
   }
   .mobile-menu ul li a:hover {
     color: #0b8fcf;
+  }
+
+  /* body section code =========================================================================================================== */
+
+  /* footer ===========================================================================================================*/
+  .inner-footer {
+    padding: 45px 30px 25px 30px;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .contact {
+    width: 100%;
+  }
+  .contact:nth-child(1) {
+    border: none;
+  }
+  .copyright {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .copyright p {
+    text-align: center;
+  }
+  .design h1 {
+    font-size: 80px;
+  }
+}
+
+/* =================================================================================================================== */
+/* media query max width 550px */
+/* =================================================================================================================== */
+@media (max-width: 550px) {
+  /* footer ===========================================================================================================*/
+  .design h1 {
+    font-size: 70px;
+    text-align: center;
   }
 }
