@@ -160,6 +160,7 @@ a {
 /* body section code ===========================================================================================================*/
 
 .hero-section {
+  border-radius: 0 0 30px 30px;
   height: 100vh;
   overflow: hidden;
   background: linear-gradient(to bottom, #000000 0%, #011c2a 100%),
@@ -233,7 +234,21 @@ a {
   width: 50%;
   object-fit: cover;
 }
-.hero-img img {
+
+.marquee-container {
+  padding: 20px 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.marquee {
+  display: flex;
+  width: max-content;
+}
+.marquee img {
+  width: 210px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 /* footer section ===========================================================================================================*/
