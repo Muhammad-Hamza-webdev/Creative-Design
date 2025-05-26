@@ -251,6 +251,96 @@ a {
   flex-shrink: 0;
 }
 
+.membership {
+  background-color: #f2f2f2;
+  padding: 120px 0 80px 0;
+  display: flex;
+  justify-content: center;
+}
+.membership p {
+  text-align: center;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #434343;
+}
+.title {
+  padding: 0 20%;
+}
+.title h2 {
+  text-align: center;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+}
+.title h2 span {
+  text-align: center;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.membership-cards {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 40px 0 0 0;
+  justify-content: center;
+}
+
+.icon-card {
+  width: 33%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+  padding: 20px 100px;
+}
+.icon {
+  background-color: #ffffff;
+  padding: 21px;
+  box-shadow: 0px 4px 50px 0px #0726351a;
+  border-radius: 20px;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+}
+.icon img {
+  width: 60px;
+  height: 60px;
+}
+.icon-card h3 {
+  text-align: center;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+}
+.icon-card p {
+  text-align: center;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000b5;
+}
+
+.border-top {
+  border: 1px solid #00000066;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.border-right-left {
+  border: 1px solid #00000066;
+  border-bottom: none;
+}
+
+.non-border-top {
+  border-top: none;
+}
+
 /* footer section ===========================================================================================================*/
 .footer-main {
   margin-top: 50px;
