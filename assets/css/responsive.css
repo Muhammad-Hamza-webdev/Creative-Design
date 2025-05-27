@@ -358,6 +358,10 @@
     width: 100%;
   }
 
+  .graphic-card img {
+    height: 270px;
+  }
+
   .graphic-card:hover {
     max-height: 1000px;
   }
