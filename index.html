@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- ============================================ -->
@@ -75,7 +76,7 @@
     <section class="hero-section">
       <div class="container">
         <div class="inner-hero-section">
-          <div class="hero-content">
+          <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
             <span>The Creative</span>
             <h1>The <span>Creative Partner</span> For purpose-driven</h1>
             <p>Unlimited Graphic Design, Branding and Creative Subscriptions</p>
@@ -84,7 +85,13 @@
               <button class="btn-white">let’s work together</button>
             </a>
           </div>
-          <div class="hero-img">
+          <div
+            class="hero-img"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
             <img src="assets/img/hero-img.webp" alt="hero-img" />
           </div>
         </div>
@@ -137,17 +144,17 @@
     <section class="membership">
       <div class="container">
         <div class="title">
-          <p>Membership Benefits</p>
-          <h2 class="title-h2">
+          <p data-aos="fade-up">Membership Benefits</p>
+          <h2 class="title-h2" data-aos="fade-up" data-aos-duration="1000">
             The Creative Design is the way <span>marketing always</span> should
             have been. Straightforward, effective, and easy.
           </h2>
         </div>
         <div class="membership-cards">
           <!-- icon-card -->
-          <div class="icon-card">
+          <div class="icon-card" data-aos="fade-up">
             <div class="icon">
-              <img src="assets/img/clock.svg" alt="Clock" />
+              <img src="assets/img/endless req.gif" alt="Clock" />
             </div>
             <h3>Endless Requests</h3>
             <p>
@@ -156,9 +163,13 @@
             </p>
           </div>
           <!-- icon-card -->
-          <div class="icon-card border-right-left non-border-top">
+          <div
+            class="icon-card border-right-left non-border-top"
+            data-aos="fade-up"
+            data-aos-duration="200"
+          >
             <div class="icon">
-              <img src="assets/img/fast.svg" alt="Fast" />
+              <img src="assets/img/fast delivery.gif" alt="Fast" />
             </div>
             <h3>Freaky Fast</h3>
             <p>
@@ -166,17 +177,21 @@
             </p>
           </div>
           <!-- icon-card -->
-          <div class="icon-card">
+          <div class="icon-card" data-aos="fade-up" data-aos-duration="400">
             <div class="icon">
-              <img src="assets/img/one-month.svg" alt="Fee" />
+              <img src="assets/img/monthly fee.gif" alt="Fee" />
             </div>
             <h3>One Monthly Fee</h3>
             <p>No contracts, no proposals, no hidden fees.</p>
           </div>
           <!-- icon-card -->
-          <div class="icon-card border-top">
+          <div
+            class="icon-card border-top"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
             <div class="icon">
-              <img src="assets/img/top-1.svg" alt="Top" />
+              <img src="assets/img/top talentt.gif" alt="Top" />
             </div>
             <h3>Top 1% Of Talent</h3>
             <p>
@@ -185,9 +200,13 @@
             </p>
           </div>
           <!-- icon-card -->
-          <div class="icon-card border-right-left border-top">
+          <div
+            class="icon-card border-right-left border-top"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div class="icon">
-              <img src="assets/img/unlimited.svg" alt="Unlimited" />
+              <img src="assets/img/revision.gif" alt="Unlimited" />
             </div>
             <h3>Unlimited Revisions</h3>
             <p>
@@ -196,9 +215,13 @@
             </p>
           </div>
           <!-- icon-card -->
-          <div class="icon-card border-top">
+          <div
+            class="icon-card border-top"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div class="icon">
-              <img src="assets/img/multilang.svg" alt="Multi Lang" />
+              <img src="assets/img/mulitlingiul.gif" alt="Multi Lang" />
             </div>
             <h3>Multilingual</h3>
             <p>
@@ -211,7 +234,7 @@
 
     <!-- everything you need -->
     <section class="everything-you-need">
-      <h2 class="title-h2 padding mb-40">
+      <h2 class="title-h2 padding mb-40" data-aos="fade-up">
         <span>Everything You Need</span> To Give Your Marketing A Creative Edge
       </h2>
       <div class="img-marquee-container">
@@ -256,7 +279,7 @@
     <!-- brand -->
     <section class="brand">
       <div class="container">
-        <div class="title-n-btn">
+        <div class="title-n-btn" data-aos="fade-up">
           <div>
             <p>WHAT WE DO</p>
             <h2 class="title-h2-white">
@@ -276,21 +299,30 @@
               class="img active"
               src="assets/img/8d4f2511aa0fbafe72bee4d809c5b9f489322465.webp"
               alt="img"
+              data-aos="zoom-in"
             />
             <img
               class="img"
               src="assets/img/3a6d2a3b60ff7c40911732b2eced38edb556bf34.webp"
               alt="img"
+              data-aos="zoom-in"
             />
             <img
               class="img"
               src="assets/img/26d55996466b5ee82b1cb2b8d9c0a1e88c563574.webp"
               alt="img"
+              data-aos="zoom-in"
             />
           </div>
 
           <div class="info-boxes">
-            <div class="box active" data-index="0" id="one-box">
+            <div
+              class="box active"
+              data-index="0"
+              id="one-box"
+              data-aos="fade-up"
+              data-aos-duration="300"
+            >
               <!-- SVG omitted for brevity -->
               <svg
                 width="48"
@@ -319,7 +351,13 @@
               />
             </div>
 
-            <div class="box" data-index="1" id="two-box">
+            <div
+              class="box"
+              data-index="1"
+              id="two-box"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
               <!-- SVG omitted for brevity -->
               <svg
                 width="59"
@@ -348,7 +386,13 @@
               />
             </div>
 
-            <div class="box" data-index="2" id="three-box">
+            <div
+              class="box"
+              data-index="2"
+              id="three-box"
+              data-aos="fade-up"
+              data-aos-duration="900"
+            >
               <!-- SVG omitted for brevity -->
               <svg
                 width="58"
@@ -384,14 +428,14 @@
     <!-- feature -->
     <section class="feature">
       <div class="container">
-        <div class="title">
+        <div class="title" data-aos="fade-up">
           <p>Featured Resources</p>
           <h2 class="title-h2 mb-40">Featured <span>Resources</span></h2>
         </div>
         <!-- feature box -->
         <div class="feature-box">
           <!-- box -->
-          <div class="ftr-box">
+          <div class="ftr-box" data-aos="fade-up" data-aos-duration="300">
             <svg
               width="90"
               height="89"
@@ -414,7 +458,7 @@
             </h3>
           </div>
           <!-- box -->
-          <div class="ftr-box">
+          <div class="ftr-box" data-aos="fade-up" data-aos-duration="600">
             <svg
               width="88"
               height="88"
@@ -432,7 +476,7 @@
             <p>Make More Money By Making A Difference</p>
           </div>
           <!-- box -->
-          <div class="ftr-box">
+          <div class="ftr-box" data-aos="fade-up" data-aos-duration="900">
             <svg
               width="90"
               height="90"
@@ -464,7 +508,7 @@
     <!-- offer -->
     <section class="offer">
       <div class="container">
-        <div class="title-n-btn">
+        <div class="title-n-btn" data-aos="fade-up">
           <div>
             <p class="pra-p">WHAT WE OFFER</p>
             <h2 class="title-h2 text-start">
@@ -482,7 +526,11 @@
         <!-- graphic box -->
         <div class="graphic-box-main">
           <!-- cards -->
-          <div class="graphic-card w-50">
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="300"
+          >
             <img
               src="./assets/img/26d55996466b5ee82b1cb2b8d9c0a1e88c563574.webp"
               alt="image"
@@ -509,7 +557,11 @@
             </div>
           </div>
           <!-- cards -->
-          <div class="graphic-card w-50">
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
             <img
               src="./assets/img/4945fec517580e65e0818731534b2baf5b0ca840.webp"
               alt="image"
@@ -536,7 +588,11 @@
             </div>
           </div>
           <!-- cards -->
-          <div class="graphic-card w-50">
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="300"
+          >
             <img
               src="./assets/img/b18fce5413f04461446c4b5bdaf08449a632fb76.webp"
               alt="image"
@@ -563,7 +619,11 @@
             </div>
           </div>
           <!-- cards -->
-          <div class="graphic-card w-50">
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
             <img
               src="./assets/img/76ad2c3b3f515ca97dd206af947b62b342c7cf36.webp"
               alt="image"
@@ -590,7 +650,11 @@
             </div>
           </div>
           <!-- cards -->
-          <div class="graphic-card w-50">
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="300"
+          >
             <img
               src="./assets/img/af3f26b52b71e998933257e05e26ddbbeb7e71ce.webp"
               alt="image"
@@ -617,7 +681,11 @@
             </div>
           </div>
           <!-- cards -->
-          <div class="graphic-card w-50">
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
             <img
               src="./assets/img/3a6d2a3b60ff7c40911732b2eced38edb556bf34.webp"
               alt="image"
@@ -644,7 +712,11 @@
             </div>
           </div>
           <!-- cards -->
-          <div class="graphic-card w-100">
+          <div
+            class="graphic-card w-100"
+            data-aos="fade-up"
+            data-aos-duration="300"
+          >
             <img
               src="./assets/img/4b3e1395baaeff7523a58013a690b093370d2f68.webp"
               alt="image"
@@ -676,7 +748,7 @@
 
     <!-- people -->
     <section class="people">
-      <div class="title">
+      <div class="title" data-aos="fade-up">
         <h2 class="title-h2 mb-40">What <span>People Say</span></h2>
         <p class="para-p-tag mb-40">
           Why Settle for Less? Before you dive in, let's show you why our
@@ -721,12 +793,12 @@
     <!-- price -->
     <section class="price">
       <div class="container">
-        <h2 class="title-h2-white text-center mb-40">
+        <h2 class="title-h2-white text-center mb-40" data-aos="fade-up">
           PRICING <span>& PACKAGES</span>
         </h2>
         <div class="price-list">
           <!-- price card -->
-          <div class="price-card">
+          <div class="price-card" data-aos="fade-up">
             <input type="button" value="Boost" class="btn-prpl" />
             <p>
               For organizations needing a handful of creative assets throughout
@@ -796,7 +868,7 @@
             </ul>
           </div>
           <!-- price card -->
-          <div class="price-card">
+          <div class="price-card" data-aos="fade-up" data-aos-duration="300">
             <input type="button" value="Growth" class="btn-prpl" />
             <p>
               For organizations needing steady output to support campaigns and
@@ -873,7 +945,7 @@
             </p>
           </div>
           <!-- price card -->
-          <div class="price-card">
+          <div class="price-card" data-aos="fade-up" data-aos-duration="600">
             <input type="button" value="Momentum" class="btn-prpl" />
             <p>
               For organizations needing extensive creative strategy and
@@ -950,7 +1022,7 @@
     <!-- clendley -->
     <section class="let-work">
       <div class="container">
-        <div class="title">
+        <div class="title" data-aos="fade-up">
           <h2 class="title-h2 mb-40">Let's <span>Work Together</span></h2>
           <p class="mb-40">
             Thank you for your interest in HOLY SH*FT! Creative Studio! Please
@@ -1005,4 +1077,10 @@
     <!-- ============================================ -->
   </body>
   <script src="assets/js/home-animation.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 500, // values from 0 to 3000, with step 50ms
+    });
+  </script>
 </html>
