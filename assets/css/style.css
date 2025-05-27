@@ -27,8 +27,7 @@ a {
 }
 
 .inner-header {
-  backdrop-filter: blur(4px);
-  /* backdrop-filter: blur(20px); */
+  backdrop-filter: blur(20px);
   position: relative;
   background-color: #ffffff1a;
   border-radius: 360px;
@@ -577,6 +576,82 @@ a {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.feature {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.feature p {
+  text-align: center;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #434343;
+}
+.feature-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ftr-box {
+  width: 20%;
+  border: 1px solid #666666;
+  border-radius: 20px;
+  padding: 20px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.ftr-box:hover {
+  cursor: pointer;
+  border: 1px solid #0b8fcf;
+  background-color: #0b8fcf;
+  /* transform: translateY(-10px); */
+  box-shadow: 0 10px 20px rgba(11, 143, 207, 0.2);
+}
+
+.ftr-box svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.ftr-box:hover svg path {
+  fill: #ffffff;
+  transform: scale(1.1);
+}
+
+.ftr-box h3 {
+  color: #000000;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.ftr-box:hover h3 {
+  color: #ffffff;
+}
+
+.ftr-box p {
+  color: #000000b5;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.ftr-box:hover p {
+  color: #ffffff;
 }
 
 /* footer section ===========================================================================================================*/
