@@ -346,7 +346,7 @@ a {
   overflow: hidden;
 }
 
-.title-h2 {
+.mb-40 {
   margin-bottom: 40px;
 }
 
@@ -451,9 +451,9 @@ a {
 
 .brand {
   background-color: #072635;
-  border-radius: 30px;
   display: flex;
   justify-content: center;
+  border-radius: 30px;
   padding: 110px 0;
 }
 
@@ -652,6 +652,141 @@ a {
 
 .ftr-box:hover p {
   color: #ffffff;
+}
+
+.offer {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 110px 0;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.pra-p {
+  color: #434343 !important;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.graphic-box-main {
+  margin-top: 40px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+}
+
+.graphic-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #d1cfcf;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: auto;
+  max-height: 500px;
+}
+.graphic-card:hover {
+  box-shadow: 0px 4px 39px 0px rgba(0, 0, 0, 0.25);
+  max-height: 1000px;
+  transition: all 0.5s ease;
+}
+
+.graphic-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 40px;
+  transition: transform 0.3s ease;
+}
+
+.graphic-card h3 {
+  color: #000000;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.graphic-card:hover h3 {
+  color: #2a2a2a;
+}
+
+.list-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.graphic-card:hover .list-container {
+  max-height: 500px;
+  display: block;
+}
+
+.list {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease 0.2s;
+}
+.graphic-card:hover .list {
+  opacity: 1;
+  transform: translateY(0);
+}
+.list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list ul li {
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #343434b0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.list ul li:hover {
+  color: #000000;
+  transform: translateX(5px);
+}
+
+.w-50 {
+  width: calc(50% - 10px);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.title-n-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* footer section ===========================================================================================================*/
