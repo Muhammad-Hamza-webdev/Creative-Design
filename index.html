@@ -673,6 +673,50 @@
         </div>
       </div>
     </section>
+
+    <!-- people -->
+    <section class="people">
+      <div class="title">
+        <h2 class="title-h2 mb-40">What <span>People Say</span></h2>
+        <p class="para-p-tag mb-40">
+          Why Settle for Less? Before you dive in, let's show you why our
+          subscription is the game-changer your business needs.
+        </p>
+      </div>
+      <!-- slider -->
+      <div class="slider-container">
+        <div class="slider-track">
+          <div class="slide">
+            <img src="./assets/img/Item.webp" alt="item" />
+          </div>
+          <div class="slide">
+            <img src="./assets/img/Item-1.webp" alt="item" />
+          </div>
+          <div class="slide">
+            <img src="./assets/img/Item-2.webp" alt="item" />
+          </div>
+          <div class="slide">
+            <img src="./assets/img/Item.webp" alt="item" />
+          </div>
+          <div class="slide">
+            <img src="./assets/img/Item-1.webp" alt="item" />
+          </div>
+          <div class="slide">
+            <img src="./assets/img/Item-2.webp" alt="item" />
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav">
+        <div class="slider-dot">
+          <div class="dot active" data-index="0"></div>
+          <div class="dot" data-index="1"></div>
+          <div class="dot" data-index="2"></div>
+          <div class="dot" data-index="3"></div>
+          <div class="dot" data-index="4"></div>
+          <div class="dot" data-index="5"></div>
+        </div>
+      </div>
+    </section>
     <!-- ============================================ -->
     <!-- body section end -->
     <!-- ============================================ -->
@@ -715,20 +759,4 @@
     <!-- ============================================ -->
   </body>
   <script src="assets/js/home-animation.js"></script>
-  <script>
-    const boxes = document.querySelectorAll(".box");
-    const images = document.querySelectorAll(".desktop-imges .img");
-
-    boxes.forEach((box, index) => {
-      box.addEventListener("click", () => {
-        // Remove active from all
-        boxes.forEach((b) => b.classList.remove("active"));
-        images.forEach((img) => img.classList.remove("active"));
-
-        // Add active to current
-        box.classList.add("active");
-        images[index].classList.add("active");
-      });
-    });
-  </script>
 </html>

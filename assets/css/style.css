@@ -266,6 +266,9 @@ a {
 .title {
   padding: 0 20%;
 }
+.para-p-tag {
+  padding: 0 20%;
+}
 .title-h2 {
   text-align: center;
   font-family: "inter", Arial, Helvetica, sans-serif;
@@ -786,6 +789,62 @@ a {
 .btn-white:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.people {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.people p {
+  text-align: center;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #434343;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 25%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slider-dot {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #0b8fcf;
 }
 
 /* footer section ===========================================================================================================*/
