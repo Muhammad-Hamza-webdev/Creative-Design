@@ -625,7 +625,6 @@ a {
 
 .ftr-box:hover svg path {
   fill: #ffffff;
-  transform: scale(1.1);
 }
 
 .ftr-box h3 {
