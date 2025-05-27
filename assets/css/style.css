@@ -847,6 +847,106 @@ a {
   background-color: #0b8fcf;
 }
 
+.price {
+  background-color: #072635;
+  padding: 100px 0;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.price-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.price-card {
+  width: calc(33% - 10px);
+  border: 10px solid #d9d9d9;
+  padding: 33px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-prpl {
+  padding: 20px 50px;
+  background-color: #ebecfc;
+  color: #7a81ee;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #ebecfc;
+  border-radius: 360px;
+}
+.prc-btn {
+  padding: 20px 50px;
+  background-color: #0b8fcf;
+  color: #ffffff;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  border: 1px solid #0b8fcf;
+  border-radius: 360px;
+  text-align: center;
+}
+
+.price-card p {
+  color: #000000b5;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.prc-info-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.prc-info-list li {
+  color: #000000;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  padding: 10px 0;
+  border-bottom: 1px solid #00000017;
+  width: 100%;
+  align-items: start;
+}
+.prc-info-list li img {
+  width: 20px;
+}
+
+.let-work {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+.let-work p {
+  text-align: center;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #434343;
+}
+
 /* footer section ===========================================================================================================*/
 .footer-main {
   margin-top: 50px;
