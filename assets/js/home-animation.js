@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Animate movement
   tl.to(marquee, {
     x: -totalWidth,
-    duration: cards.length * 5, // 3 seconds per card
+    duration: cards.length * 5, // 5 seconds per card
     ease: "none",
     modifiers: {
       x: function (x) {

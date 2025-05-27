@@ -13,6 +13,9 @@
   .hero-content h1 span {
     font-size: 65px;
   }
+  .desktop-imges img {
+    width: 95%;
+  }
 }
 
 /* =================================================================================================================== */
@@ -27,6 +30,9 @@
   }
   .design h1 {
     font-size: 140px;
+  }
+  .padding {
+    padding: 0 27%;
   }
 }
 
@@ -48,6 +54,9 @@
   }
   .icon-card {
     padding: 20px 60px;
+  }
+  .padding {
+    padding: 0 20%;
   }
 }
 /* =================================================================================================================== */
@@ -71,6 +80,12 @@
   }
   .icon-card h3 {
     font-size: 26px;
+  }
+  .desktop-imges img {
+    object-fit: cover;
+  }
+  .padding {
+    padding: 0 16%;
   }
 }
 
@@ -142,10 +157,14 @@
   .title {
     padding: 0;
   }
-  .title-h2 {
+
+  .title-h2,
+  .title-h2-white {
     font-size: 35px;
   }
-  .title-h2 span {
+
+  .title-h2 span,
+  .title-h2-white span {
     font-size: 35px;
   }
   .icon-card {
@@ -168,6 +187,41 @@
 
   .img-card {
     width: 320px;
+  }
+  .overlay {
+    padding: 95% 10% 10% 10%;
+  }
+
+  .title-n-btn {
+    flex-direction: column;
+  }
+
+  .title-n-btn div:nth-child(1) {
+    width: 100%;
+  }
+  .title-n-btn div:nth-child(2) {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .toggle-box {
+    flex-direction: column;
+  }
+  .desktop-imges {
+    display: none;
+  }
+  .info-boxes {
+    width: 100%;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .active .mobile-img {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   /* footer ===========================================================================================================*/
@@ -216,7 +270,8 @@
     font-size: 30px;
   }
 
-  .title-h2 {
+  .title-h2,
+  .title-h2-white {
     font-size: 28px;
   }
 
@@ -224,7 +279,7 @@
     padding: 0 10px;
   }
 
-  .title-h2 span {
+  .title-h2 span .title-h2-white span {
     font-size: 28px;
   }
 
@@ -243,6 +298,10 @@
   }
   .everything-you-need {
     padding: 60px 0 40px 0;
+  }
+
+  .box {
+    border: 2px solid rgba(242, 242, 242, 0.25);
   }
 
   /* footer ===========================================================================================================*/

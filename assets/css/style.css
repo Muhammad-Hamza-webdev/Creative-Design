@@ -400,8 +400,7 @@ a {
 .overlay {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  padding: 20px 30px;
+  padding: 80% 10% 10% 10%;
   gap: 20px;
   position: relative;
   z-index: 2;
@@ -449,6 +448,135 @@ a {
 }
 .card-five {
   background-image: url("../img/Group 1000011192.webp");
+}
+
+.brand {
+  background-color: #072635;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 110px 0;
+}
+
+.title-n-btn {
+  display: flex;
+  align-items: center;
+}
+.title-n-btn div:nth-child(1) {
+  width: 55%;
+}
+.title-n-btn div:nth-child(2) {
+  width: 45%;
+  display: flex;
+  justify-content: end;
+}
+.title-n-btn p {
+  color: #0b8fcf;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title-h2-white {
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.title-h2-white span {
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.toggle-box {
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.desktop-imges {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.desktop-imges img {
+  display: none;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.desktop-imges img.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.info-boxes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box {
+  border: 5px solid rgba(242, 242, 242, 0.25);
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.3s ease;
+}
+.box:hover {
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  transform: scale(1.01);
+}
+.box h3 {
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.box:hover h3 {
+  color: #000000;
+}
+.box p {
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffffeb;
+  transition: color 0.3s ease;
+}
+.box:hover p {
+  color: #000000b5;
+}
+.box.active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.box.active h3,
+.box.active p {
+  color: #000000;
+}
+
+.mobile-img {
+  display: none;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 /* footer section ===========================================================================================================*/
