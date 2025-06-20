@@ -75,13 +75,17 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.set(marquee, { x: 0 });
 
   // Animation timeline
-  const tl = gsap.timeline({ repeat: -1 });
+  const tl = gsap.timeline({
+    repeat: -1,
+    defaults: {
+      ease: "none",
+    },
+  });
 
   // Animate movement
   tl.to(marquee, {
     x: -totalWidth,
-    duration: cards.length * 5, // 5 seconds per card
-    ease: "none",
+    duration: cards.length * 3, // 5 seconds per card
     modifiers: {
       x: function (x) {
         // Loop the position when it reaches totalWidth
@@ -90,9 +94,25 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // Pause on hover
-  marquee.addEventListener("mouseenter", () => tl.pause());
-  marquee.addEventListener("mouseleave", () => tl.play());
+  // Slow down on hover instead of pausing
+  let normalSpeed = cards.length * 3; // Normal duration
+  let slowSpeed = cards.length * 10; // Slower duration (double the time)
+
+  marquee.addEventListener("mouseenter", () => {
+    gsap.to(tl, {
+      timeScale: 0.5, // Slow down to half speed
+      duration: 0.5,
+      overwrite: true,
+    });
+  });
+
+  marquee.addEventListener("mouseleave", () => {
+    gsap.to(tl, {
+      timeScale: 1, // Return to normal speed
+      duration: 0.5,
+      overwrite: true,
+    });
+  });
 
   // Handle resize
   window.addEventListener("resize", function () {

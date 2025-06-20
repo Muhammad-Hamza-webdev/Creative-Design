@@ -6,6 +6,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -45,13 +56,13 @@ a {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  background: linear-gradient(360deg, #ffffff1a 0%, #6666660e 100%);
+  background: linear-gradient(360deg, #6664645c 0%, #66646430 100%);
   border-radius: 360px;
   z-index: -1;
 }
 
 .logo img {
-  width: 200px;
+  width: 270px;
 }
 .navbar ul {
   display: flex;
@@ -231,7 +242,12 @@ a {
 
 .hero-img {
   width: 50%;
+}
+
+.hero-img img {
   object-fit: cover;
+  width: 120%;
+  margin-left: -20px;
 }
 
 .marquee-container {
@@ -365,6 +381,7 @@ a {
 }
 
 .img-card {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, #000000 100%);
   width: 370px;
   height: 470px;
   background-position: center center;
@@ -377,17 +394,28 @@ a {
   transition: all 0.3s ease;
 }
 
-.img-card::after {
+/* .img-card::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0, 221, 221, 0) 0%, #003c3c 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, #000000 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 20px;
+} */
+
+.img-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(84, 84, 84, 0) 52%, rgb(0, 0, 0) 100%);
+  z-index: 1;
 }
 
 .img-card:hover {
@@ -402,7 +430,7 @@ a {
 .overlay {
   display: flex;
   flex-direction: column;
-  padding: 80% 10% 10% 10%;
+  padding: 98% 10% 10% 10%;
   gap: 20px;
   position: relative;
   z-index: 2;
@@ -435,23 +463,6 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
-
-.card-one {
-  background-image: url("../img/Group\ 1000011188.webp");
-}
-.card-two {
-  background-image: url("../img/Group 1000011189.webp");
-}
-.card-three {
-  background-image: url("../img/Group 1000011190.webp");
-}
-.card-four {
-  background-image: url("../img/Group 1000011191.webp");
-}
-.card-five {
-  background-image: url("../img/Group 1000011192.webp");
-}
-
 .brand {
   background-color: #072635;
   display: flex;
@@ -507,7 +518,7 @@ a {
 .desktop-imges img {
   display: none;
   width: 90%;
-  height: 100%;
+  height: 650px;
   border-radius: 20px;
   opacity: 0;
   transform: translateY(10px);
@@ -960,6 +971,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.inner-footer a img {
+  width: 370px;
 }
 .info {
   display: flex;

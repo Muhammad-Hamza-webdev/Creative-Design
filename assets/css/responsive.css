@@ -77,6 +77,9 @@
   .prc-btn {
     font-size: 30px;
   }
+  .desktop-imges img {
+    height: 710px;
+  }
 }
 /* =================================================================================================================== */
 /* media query max width 1024px */
@@ -141,8 +144,14 @@
     display: block;
   }
   .logo img {
-    width: 160px;
+    width: 270px;
+    margin-left: -25px;
   }
+  .hero-img img {
+    margin-left: -30px;
+    width: 100%;
+  }
+
   body:has(input#burger:checked) .mobile-menu {
     position: fixed;
     top: 110px;
@@ -314,7 +323,17 @@
 /* media query max width 550px */
 /* =================================================================================================================== */
 @media (max-width: 550px) {
+  .logo img {
+    width: 220px;
+    margin-left: -25px;
+  }
+
   /* body section code =========================================================================================================== */
+
+  .hero-img img {
+    margin-left: 0px;
+    width: 100%;
+  }
 
   .btn-white {
     padding: 20px 26px;
