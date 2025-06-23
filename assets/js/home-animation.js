@@ -146,117 +146,77 @@ boxes.forEach((box, index) => {
 
 // slider ==========================================================================================
 
-const track = document.querySelector(".slider-track");
-const dots = document.querySelectorAll(".dot");
-const originalSlides = document.querySelectorAll(".slide");
-let slidesPerView = getSlidesPerView();
-let currentIndex = 0;
-let slides = [];
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".slider-container");
+  const sliderTrack = document.querySelector(".slider-track");
+  const cards = document.querySelectorAll(".slide-card");
 
-// Clone first and last slides
-function cloneSlides() {
-  const firstClones = [];
-  const lastClones = [];
+  // Make the container width 100% to prevent horizontal scroll
+  container.style.overflow = "hidden";
 
-  for (let i = 0; i < slidesPerView; i++) {
-    const first = originalSlides[i].cloneNode(true);
-    const last = originalSlides[originalSlides.length - 1 - i].cloneNode(true);
+  // Clone each card and append to create seamless looping
+  cards.forEach((card) => {
+    const clone = card.cloneNode(true);
+    sliderTrack.appendChild(clone);
+  });
 
-    first.classList.add("clone");
-    last.classList.add("clone");
+  // Calculate total width including gaps
+  const cardWidth = cards[0].offsetWidth;
+  const gapWidth = 20; // Your gap size from CSS
+  const totalWidth = (cardWidth + gapWidth) * cards.length;
 
-    firstClones.push(first);
-    lastClones.unshift(last); // keep in order
-  }
+  // Set initial position
+  gsap.set(sliderTrack, { x: 0 });
 
-  firstClones.forEach((clone) => track.appendChild(clone));
-  lastClones.forEach((clone) => track.insertBefore(clone, track.firstChild));
+  // Animation timeline
+  const tl = gsap.timeline({
+    repeat: -1,
+    defaults: {
+      ease: "none",
+    },
+  });
 
-  slides = track.querySelectorAll(".slide");
-}
+  // Animate movement
+  tl.to(sliderTrack, {
+    x: -totalWidth,
+    duration: cards.length * 3, // 3 seconds per card
+    modifiers: {
+      x: function (x) {
+        // Loop the position when it reaches totalWidth
+        return (parseFloat(x) % totalWidth) + "px";
+      },
+    },
+  });
 
-cloneSlides();
+  // More dramatic slow down on hover
+  sliderTrack.addEventListener("mouseenter", () => {
+    gsap.to(tl, {
+      timeScale: 0.2, // Much slower speed (20% of normal)
+      duration: 1, // Longer transition to slow speed
+      overwrite: true,
+      ease: "power2.out", // Smoother transition
+    });
+  });
 
-// Recalculate slide width
-function getSlidesPerView() {
-  if (window.innerWidth <= 480) return 1;
-  if (window.innerWidth <= 850) return 3;
-  return 4;
-}
+  sliderTrack.addEventListener("mouseleave", () => {
+    gsap.to(tl, {
+      timeScale: 1, // Return to normal speed
+      duration: 1, // Longer transition back
+      overwrite: true,
+      ease: "power2.out", // Smoother transition
+    });
+  });
 
-function updateSlidesPerView() {
-  slidesPerView = getSlidesPerView();
-}
+  // Handle resize
+  window.addEventListener("resize", function () {
+    const newCardWidth = cards[0].offsetWidth;
+    const newTotalWidth = (newCardWidth + gapWidth) * cards.length;
 
-function moveToSlide(index, transition = true) {
-  const slideWidth = slides[0].offsetWidth + 20; // includes padding
-  const offset = (index + slidesPerView) * slideWidth;
-
-  if (!transition) {
-    track.style.transition = "none";
-  } else {
-    track.style.transition = "transform 0.5s ease";
-  }
-
-  track.style.transform = `translateX(-${offset}px)`;
-
-  dots.forEach((dot) => dot.classList.remove("active"));
-  const visibleIndex = index % dots.length;
-  if (dots[visibleIndex]) {
-    dots[visibleIndex].classList.add("active");
-  }
-
-  currentIndex = index;
-}
-
-// Loop transition fix
-track.addEventListener("transitionend", () => {
-  if (currentIndex < 0) {
-    currentIndex = dots.length - 1;
-    moveToSlide(currentIndex, false);
-  } else if (currentIndex >= dots.length) {
-    currentIndex = 0;
-    moveToSlide(currentIndex, false);
-  }
-});
-
-// Dot click
-dots.forEach((dot) => {
-  dot.addEventListener("click", () => {
-    const index = parseInt(dot.dataset.index);
-    moveToSlide(index);
+    // Update animation with new widths
+    tl.progress(0).vars.modifiers.x = function (x) {
+      return (parseFloat(x) % newTotalWidth) + "px";
+    };
+    tl.vars.x = -newTotalWidth;
+    tl.invalidate().restart();
   });
 });
-
-// Swipe on mobile
-let startX = 0;
-let isDragging = false;
-
-track.addEventListener("touchstart", (e) => {
-  startX = e.touches[0].clientX;
-  isDragging = true;
-});
-
-track.addEventListener("touchmove", (e) => {
-  if (!isDragging) return;
-  const currentX = e.touches[0].clientX;
-  const deltaX = currentX - startX;
-
-  if (Math.abs(deltaX) > 50) {
-    if (deltaX < 0) {
-      moveToSlide(currentIndex + 1);
-    } else {
-      moveToSlide(currentIndex - 1);
-    }
-    isDragging = false;
-  }
-});
-
-// On resize
-window.addEventListener("resize", () => {
-  updateSlidesPerView();
-  moveToSlide(currentIndex, false);
-});
-
-// Init move
-moveToSlide(0, false);

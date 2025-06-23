@@ -80,6 +80,14 @@
   .desktop-imges img {
     height: 710px;
   }
+  .slide-card {
+    width: 440px;
+    max-width: 440px;
+    min-width: 440px;
+  }
+  .slide-card img {
+    height: 310px;
+  }
 }
 /* =================================================================================================================== */
 /* media query max width 1024px */
@@ -448,6 +456,21 @@
 
   .let-work {
     padding: 80px 10px 0 10px;
+  }
+
+  .slide-card {
+    width: 390px;
+    max-width: 390px;
+    min-width: 390px;
+  }
+  .slide-card img {
+    height: 280px;
+  }
+  .client-msg {
+    width: 90%;
+  }
+  .my-msg {
+    width: 90%;
   }
 
   /* footer ===========================================================================================================*/

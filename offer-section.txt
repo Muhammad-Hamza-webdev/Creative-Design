@@ -1,0 +1,221 @@
+<section class="offer">
+      <div class="container">
+        <div class="title-n-btn" data-aos="fade-up">
+          <div>
+            <p class="pra-p">WHAT WE OFFER</p>
+            <h2 class="title-h2 text-start">
+              Unlimited <span>Graphic Design Services</span> To Take Your
+              Initiatives Further
+            </h2>
+          </div>
+          <div>
+            <!-- button -->
+            <a href="#letsworktogather">
+              <button class="btn-white">let’s work together</button>
+            </a>
+          </div>
+        </div>
+        <!-- graphic box -->
+        <div class="graphic-box-main">
+          <!-- cards -->
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="300"
+          >
+            <img src="./assets/img/graphic design.webp" alt="image" />
+            <h3>Graphic Design</h3>
+            <div class="list-container">
+              <div class="list">
+                <ul>
+                  <li>Logos</li>
+                  <li>Letterhead</li>
+                  <li>Digital Ad Creative</li>
+                  <li>Labels</li>
+                  <li>Business Cards</li>
+                  <li>Product Packaging</li>
+                </ul>
+                <ul>
+                  <li>Brand Guidelines</li>
+                  <li>Social Media Graphics</li>
+                  <li>Email Templates</li>
+                  <li>Tags</li>
+                  <li>Infographics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <img src="./assets/img/printdesign.webp" alt="image" />
+            <h3>Print Design</h3>
+            <div class="list-container">
+              <div class="list">
+                <ul>
+                  <li>Logos</li>
+                  <li>Letterhead</li>
+                  <li>Digital Ad Creative</li>
+                  <li>Labels</li>
+                  <li>Business Cards</li>
+                  <li>Product Packaging</li>
+                </ul>
+                <ul>
+                  <li>Brand Guidelines</li>
+                  <li>Social Media Graphics</li>
+                  <li>Email Templates</li>
+                  <li>Tags</li>
+                  <li>Infographics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="300"
+          >
+            <img src="./assets/img/environmental.webp" alt="image" />
+            <h3>Environmental Design</h3>
+            <div class="list-container">
+              <div class="list">
+                <ul>
+                  <li>Logos</li>
+                  <li>Letterhead</li>
+                  <li>Digital Ad Creative</li>
+                  <li>Labels</li>
+                  <li>Business Cards</li>
+                  <li>Product Packaging</li>
+                </ul>
+                <ul>
+                  <li>Brand Guidelines</li>
+                  <li>Social Media Graphics</li>
+                  <li>Email Templates</li>
+                  <li>Tags</li>
+                  <li>Infographics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <img src="./assets/img/motion.webp" alt="image" />
+            <h3>Motion Graphics & Video</h3>
+            <div class="list-container">
+              <div class="list">
+                <ul>
+                  <li>Logos</li>
+                  <li>Letterhead</li>
+                  <li>Digital Ad Creative</li>
+                  <li>Labels</li>
+                  <li>Business Cards</li>
+                  <li>Product Packaging</li>
+                </ul>
+                <ul>
+                  <li>Brand Guidelines</li>
+                  <li>Social Media Graphics</li>
+                  <li>Email Templates</li>
+                  <li>Tags</li>
+                  <li>Infographics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="300"
+          >
+            <img src="./assets/img/illustration.webp" alt="image" />
+            <h3>Illustration</h3>
+            <div class="list-container">
+              <div class="list">
+                <ul>
+                  <li>Logos</li>
+                  <li>Letterhead</li>
+                  <li>Digital Ad Creative</li>
+                  <li>Labels</li>
+                  <li>Business Cards</li>
+                  <li>Product Packaging</li>
+                </ul>
+                <ul>
+                  <li>Brand Guidelines</li>
+                  <li>Social Media Graphics</li>
+                  <li>Email Templates</li>
+                  <li>Tags</li>
+                  <li>Infographics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div
+            class="graphic-card w-50"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <img
+              src="./assets/img/3a6d2a3b60ff7c40911732b2eced38edb556bf34.webp"
+              alt="image"
+            />
+            <h3>Web Design & Development**</h3>
+            <div class="list-container">
+              <div class="list">
+                <ul>
+                  <li>Logos</li>
+                  <li>Letterhead</li>
+                  <li>Digital Ad Creative</li>
+                  <li>Labels</li>
+                  <li>Business Cards</li>
+                  <li>Product Packaging</li>
+                </ul>
+                <ul>
+                  <li>Brand Guidelines</li>
+                  <li>Social Media Graphics</li>
+                  <li>Email Templates</li>
+                  <li>Tags</li>
+                  <li>Infographics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div
+            class="graphic-card w-100"
+            data-aos="fade-up"
+            data-aos-duration="300"
+          >
+            <img src="./assets/img/creativedirection.webp" alt="image" />
+            <h3>Creative Direction</h3>
+            <div class="list-container">
+              <div class="list">
+                <ul>
+                  <li>Logos</li>
+                  <li>Letterhead</li>
+                  <li>Digital Ad Creative</li>
+                  <li>Labels</li>
+                  <li>Business Cards</li>
+                  <li>Product Packaging</li>
+                </ul>
+                <ul>
+                  <li>Brand Guidelines</li>
+                  <li>Social Media Graphics</li>
+                  <li>Email Templates</li>
+                  <li>Tags</li>
+                  <li>Infographics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
