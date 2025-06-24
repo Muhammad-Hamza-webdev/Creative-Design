@@ -22,6 +22,9 @@
 /* media query max width 1366px */
 /* =================================================================================================================== */
 @media (max-width: 1366px) {
+  .top-btn {
+    right: 150px;
+  }
   .hero-content h1 {
     font-size: 60px;
   }
@@ -87,6 +90,12 @@
   }
   .slide-card img {
     height: 310px;
+  }
+  .client-rev-name img {
+    border-radius: 360px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
   }
 }
 /* =================================================================================================================== */
@@ -471,6 +480,13 @@
   }
   .my-msg {
     width: 90%;
+  }
+
+  .client-rev-name img {
+    border-radius: 360px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
   }
 
   /* footer ===========================================================================================================*/

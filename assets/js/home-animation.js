@@ -1,3 +1,24 @@
+// move top ===================================================================================================
+const topBtn = document.querySelector(".top-btn");
+
+window.addEventListener("scroll", () => {
+  const scrollPercent =
+    (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+
+  if (scrollPercent > 10) {
+    topBtn.classList.add("show");
+  } else {
+    topBtn.classList.remove("show");
+  }
+});
+
+// Optional: scroll to top when clicked
+topBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// marquee ====================================================================================================
+
 document.addEventListener("DOMContentLoaded", function () {
   const marquee = document.querySelector(".marquee");
   const images = document.querySelectorAll(".marquee img");
